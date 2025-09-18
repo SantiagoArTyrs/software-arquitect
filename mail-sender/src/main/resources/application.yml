@@ -1,8 +1,8 @@
 server:
   port: 8081
   #ssl:
-    #trust-store: src/main/resources/trustore.jks
-    #trust-store-password: 1234
+  #trust-store: src/main/resources/trustore.jks
+  #trust-store-password: 1234
 
 spring:
   application:
@@ -30,17 +30,17 @@ spring:
           auth: true
           starttls:
             enable: true
-          ssl: 
+          ssl:
             trust: smtp.gmail.com
             enable: false
           socketFactory:
             fallback: true
   rabbitmq:
-    host: xxx.rmq.cloudamqp.com
-    port: 5672
-    username: username
-    password: password
-    virtual-host: username
+    host: possum.lmq.cloudamqp.com
+    port: 1883
+    username: jnzbfkke
+    password: 4t-j11FKYxm1ATg5W3JGHAkfP7QGpB-B
+    virtual-host: jnzbfkke
 eureka:
   client:
     registerWithEureka: true
